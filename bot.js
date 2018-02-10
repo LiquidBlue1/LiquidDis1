@@ -11,5 +11,20 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', function(message) {
+    if (message.content == "^clear") {
+        try {
+            if (message.member.hasPermission("MANAGE_MESSAGES")) {
+                messages = message.channel.fetchMessages();
+                message.channel.bulkDelete(messages);
+            }
+        } catch(e) {
+            message.channel.send("ERROR: ERROR CLEARING CHANNEL.");
+            console.log(e);
+        }
+    }
+
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
