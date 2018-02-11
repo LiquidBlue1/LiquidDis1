@@ -1,5 +1,3 @@
-const CLEAR_MESSAGES = '!clearMessages';
-
 const Discord = require('discord.js');
 const client = new Discord.Client();
 client.
