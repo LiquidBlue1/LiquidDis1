@@ -1,5 +1,3 @@
-const CLEAR_MESSAGES = '!clearMessages';
-
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
@@ -12,6 +10,8 @@ client.on('message', message => {
     	message.reply('pong');
   	}
 });
+
+const CLEAR_MESSAGES = '!clearMessages';
 
   console.log('ClearMessagesBot is Ready!');
   client.on('message', message => {
