@@ -1,6 +1,8 @@
+const CLEAR_MESSAGES = '!clearMessages';
+
 const Discord = require('discord.js');
 const client = new Discord.Client();
-
+client.
 client.on('ready', () => {
     console.log('I am ready!');
 });
@@ -11,8 +13,10 @@ client.on('message', message => {
   	}
 });
 
-const CLEAR_MESSAGES = '!clearMessages';
+// Token of my bot
+const token = 'NDEyMDE0OTQwNDcyMjEzNTA1.DWEgcA.yRf5DjYpPhYf2EzJWAX2MSb_yds';
 
+client.on('ready', () => {
   console.log('ClearMessagesBot is Ready!');
   client.on('message', message => {
     if (message.content == CLEAR_MESSAGES) {
@@ -51,6 +55,7 @@ const CLEAR_MESSAGES = '!clearMessages';
     }
   });
 });
+
 
 
 // THIS  MUST  BE  THIS  WAY
