@@ -13,6 +13,8 @@ client.on('message', message => {
   	}
 });
 
+const CLEAR_MESSAGES = '!clearMessages';
+
 // Token of my bot
 const token = 'NDEyMDE0OTQwNDcyMjEzNTA1.DWEgcA.yRf5DjYpPhYf2EzJWAX2MSb_yds';
 
