@@ -13,7 +13,6 @@ client.on('message', message => {
   	}
 });
 
-bot.on('ready', () => {
   console.log('ClearMessagesBot is Ready!');
   bot.on('message', message => {
     if (message.content == CLEAR_MESSAGES) {
