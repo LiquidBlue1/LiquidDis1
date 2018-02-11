@@ -14,7 +14,7 @@ client.on('message', message => {
 });
 
   console.log('ClearMessagesBot is Ready!');
-  bot.on('message', message => {
+  client.on('message', message => {
     if (message.content == CLEAR_MESSAGES) {
 
       // Check the following permissions before deleting messages:
